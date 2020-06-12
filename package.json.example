@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "typings": "dist/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx tsc & npx mocha ./dist --recursive",
     "start": "npm run dev",
     "dev": "npx tsc --watch",
     "build": "npx tsc",
@@ -22,6 +22,10 @@
   "bugs": {},
   "homepage": "",
   "devDependencies": {
-    "typescript": "*"
+    "typescript": "*",
+    "mocha": "*",
+    "chai": "*",
+    "@types/mocha": "*",
+    "@types/chai": "*"
   }
 }
